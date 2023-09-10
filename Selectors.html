@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      .para {
+        color: red;
+        font-size: 25px;
+      }
+      #para {
+        color: dodgerblue;
+        font-style: italic;
+        font-size: 30px;
+      }
+      #head,
+      .p1 {
+        font-size: 30px;
+        font-style: bold;
+        color: deeppink;
+      }
+      a {
+        font-size: 20px;
+      }
+      a[target] {
+        color: brown;
+      }
+      a[href*="wwe"] {
+        color: rgb(5, 255, 172);
+      }
+      a[href^="google"] {
+        color: black;
+      }
+      a[href$="com"] {
+        color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selectors</h1>
+    <p class="para">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, sequi.
+    </p>
+    <p id="para">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, sequi.
+    </p>
+    <h2 id="head">
+      ID & Class
+      <p class="p1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse.
+      </p>
+    </h2>
+    <a href="https://www.google.c/om" target="_blank">HOME</a>
+    <a href="wwe.google.co'm">CONTACT</a>
+    <a href="google.comd">HELP</a>
+    <a href="www.google.com">LOGIN</a>
+  </body>
+</html>
