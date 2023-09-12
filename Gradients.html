@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradients</title>
+    <style>
+      .linear {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(
+          40deg,
+          rgb(85, 0, 255),
+          yellow,
+          rgb(0, 0, 0) 83%
+        );
+      }
+      .radial {
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(black, yellow, rgb(85, 0, 255));
+      }
+      .border {
+        width: 500px;
+        height: 300px;
+        /* border: 20px solid dodgerblue; */
+        border-radius: 20px;
+        border-top: 10px dashed dodgerblue;
+        border-right: 10px dotted dodgerblue;
+        border-left: 12px double dodgerblue;
+        border-bottom: 10px soliid dodgerblue;
+        border-width: 20px;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Linear Gradient</h2>
+    <div class="linear"></div>
+    <br /><br />
+    <h2>Radial Gradient</h2>
+    <div class="radial"></div>
+    <h2>Border</h2>
+    <div class="border"></div>
+  </body>
+</html>
