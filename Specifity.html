@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specifiy</title>
+    <style>
+      .div {
+        color: red;
+        font-size: 20px;
+      }
+      #div {
+        color: dodgerblue;
+        font-style: italic;
+        font-size: 25px;
+      }
+      div {
+        color: deeppink;
+        font-style: bold;
+        font-size: 30px;
+      }
+      .div#div {
+        color: gold;
+        font-style: bold;
+        font-size: 30px;
+      }
+      p {
+        color: dodgerblue;
+        border: 3px solid greenyellow;
+      }
+      strong {
+        color: initial;
+        border: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Specifiy</h2>
+    <div class="div" id="div">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+      recusandae?
+    </div>
+    <h2>Inheritance</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur<strong> adipisicing</strong>
+      elit. Officiis!
+    </p>
+  </body>
+</html>
