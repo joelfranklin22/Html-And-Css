@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesudo</title>
+    <style>
+      .firstchild p:last-child {
+        color: red;
+        font-size: 30px;
+      }
+      .firsttype p:first-of-type,
+      p:last-of-type {
+        color: dodgerblue;
+        font-size: 30px;
+      }
+      .nth ol li:nth-child(2n) {
+        color: deeppink;
+        font-size: 30px;
+      }
+      a:visited,
+      a:link {
+        color: gold;
+        font-size: 30px;
+      }
+      a:hover,
+      a:focus {
+        color: dodgerblue;
+        font: size 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>first child</h1>
+    <div class="firstchild">
+      <p>Lorem ipsum dolor sit amet .</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div>Lorem ipsum dolor sit amet.</div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <h2>First Type</h2>
+    <header class="firsttype">
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <div>Lorem ipsum dolor sit amet.</div>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </header>
+    <h2>Nth child</h2>
+    <section class="nth">
+      <ol>
+        <li>lorem 3</li>
+        <li>lorem 3</li>
+        <li>lorem 3</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+      </ol>
+      <h2>Anchor</h2>
+      <a href="https://www.google.com" target="_blank">Google</a>
+    </section>
+  </body>
+</html>
