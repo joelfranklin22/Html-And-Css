@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseduo Element</title>
+    <style>
+      h2 p::first-letter {
+        font-size: 30px;
+        color: red;
+      }
+      h3 p::first-line {
+        font-size: 30px;
+        color: deeppink;
+      }
+      ::selection {
+        color: rgb(195, 255, 0);
+      }
+      div::before {
+        content: "pseudo selector used";
+        font-size: 30px;
+        color: dodgerblue;
+      }
+      header div::after {
+        content: "Pseudo Selector After";
+        font-size: 30px;
+        color: tomato;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseduo Element Selector</h1>
+    <h2>
+      first-letter
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        natus doloremque ex!
+      </p>
+    </h2>
+    <h3>
+      First Line
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, nisi.
+      </p>
+    </h3>
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel rerum
+      numquam laboriosam obcaecati voluptatibus nostrum doloribus, temporibus
+      aut molestias facilis minima in nobis fugit natus cupiditate explicabo
+      quas officiis? Perspiciatis.
+    </div>
+    <header>
+      <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+        commodi!
+      </div>
+    </header>
+  </body>
+</html>
