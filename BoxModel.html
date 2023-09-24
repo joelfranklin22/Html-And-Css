@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      /* p {
+        padding: 0;
+        margin: 10px;
+      } */
+      /* *::before {
+        /* content: "hello"; 
+      } */
+      p {
+        margin: 0;
+        padding: 10px;
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: dodgerblue;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      span {
+        width: 200px;
+        height: 200px;
+        background-color: gold;
+        display: inline-block;
+      }
+      .overflow {
+        height: 300px;
+        width: 300px;
+        border: 3px solid;
+        background-color: dodgerblue;
+        font-size: 2rem;
+        overflow: scroll;
+      }
+      .hide {
+        /* display: none; */
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <br />
+    <h1>Sizing</h1>
+    <div class="box1"></div>
+    <br />
+    <h1></h1>
+    <header>
+      <span>lorem</span>
+      <span>lorem</span>
+    </header>
+    <h1>Overflowing</h1>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum cum nam
+      laboriosam nisi animi eligendi unde dolorem molestiae dolorum facere.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui nobis
+      quibusdam quidem accusamus cum maxime, aspernatur odio rerum laborum animi
+      ducimus nesciunt alias nam vero labore vitae. Odit, quidem!
+    </p>
+    <h1>Hiding elements</h1>
+    <div class="hide">Lorem ipsum dolor sit.</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+  </body>
+</html>
