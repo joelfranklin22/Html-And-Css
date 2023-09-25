@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      header {
+        border: 2px solid black;
+        height: 76vh;
+        width: 60vw;
+        position: relative;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .box1 {
+        background-color: aqua;
+      }
+      .box2 {
+        background-color: deeppink;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+      .box3 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Positioning</h1>
+    <header class="conatiner">
+      <div class="box box1">
+        1
+        <div class="box box2">2</div>
+      </div>
+
+      <div class="box box3">3</div>
+    </header>
+  </body>
+</html>
