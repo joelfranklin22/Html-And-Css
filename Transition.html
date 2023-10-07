@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+    <style>
+        .dropdown {
+            display: inline;
+        }
+
+        .button {
+            background-color: gray;
+            color: white;
+            padding: 20px 15px;
+        }
+
+        .drop-link {
+            display: none;
+            min-width: 20px;
+            padding: 8px 10px;
+        }
+
+        .drop-link a {
+            padding: 10px 8px;
+            color: white;
+            display: block;
+
+            text-decoration: none;
+        }
+
+        .Dropdown:hover .drop-link {
+            display: block;
+            background-color: black;
+            color: white;
+        }
+        .column{
+            column-count:3;
+            column-gap:50px;
+            column-rule:4px solid rgb(4, 248, 236);            
+        }
+        .rotate{
+            height:100px;
+            width:100px;
+            background-color:rgb(0, 255, 106);
+            transform:rotate(60deg);
+        }
+        .skew{
+            height:100px;
+            width:100px;
+            background-color:rgb(0, 255, 106);
+            transform:skewX(10deg);
+            transform:skewY(10deg);
+        }
+        .scale{
+            height:100px;
+            width:100px;
+            background-color:rgb(0, 255, 106);
+            transform:scaleX(1.8);
+            transform:scaleY();
+        }
+        .transitions{
+            height:100px;
+            width:100px;
+            background-color:rgb(0, 255, 106);
+            transition-property:height;
+            transition-timing-function:cubic-bezier(0,.4,);          
+        }
+        .trans:hover .transitions{
+            height:500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-shadow:3px 4px 5px red;">DROPDOWN</h1>
+    <div class="Dropdown">
+        <button class="button">Dropdown</button>
+        <div class="drop-link">
+            <a href="">HOME</a>
+            <a href="">CONTACT</a>
+            <a href="">SHOP</a>
+        </div>
+    </div>
+    <h1>COLUMN</h1>
+    <div class="column">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nisi debitis corrupti fugit eaque
+            voluptate nemo at saepe non eius. Corporis in, quod hic iste quia sapiente quis ullam eveniet.
+            Aspernatur dignissimos voluptatem veritatis provident, eos, dolor ex cupiditate explicabo magnam, fugiat
+            quam eveniet. Magni non alias cupiditate iure nam quibusdam eligendi. Dolorum expedita perspiciatis totam a
+            voluptas minus accusamus?
+            Magni asperiores, nostrum repellendus fugiat iusto repellat commodi, consectetur perferendis aperiam
+            architecto omnis accusamus porro maxime quos quod soluta ipsum, quaerat vitae sed consequatur maiores
+            blanditiis quibusdam! Earum, aliquid cum.
+            Mollitia fugiat laborum quae. Tempora ipsum eveniet dolor quaerat cum minus reprehenderit. Vero eos dolorum
+            nobis expedita, recusandae dolore nemo ducimus beatae, amet esse fugiat nulla laboriosam aperiam est
+            delectus?
+            Iusto possimus facilis beatae consectetur ipsum, inventore sapiente asperiores qui ducimus quaerat in
+            ratione iure, aperiam repellat non! Molestiae dolorem numquam blanditiis aspernatur veniam repellat.
+            Explicabo, expedita et? Libero, laborum!
+            In magni incidunt nostrum libero, facilis aperiam neque doloribus iste esse laboriosam asperiores possimus,
+            quod corrupti? Placeat, perferendis aliquam velit nisi soluta in beatae sint eum! Repudiandae iste
+            cupiditate amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim itaque quis voluptate nulla. Voluptatum eius hic recusandae minus deserunt cum magni quas impedit ipsam repellat saepe, accusantium corporis molestiae ducimus!
+            Impedit consequuntur sunt doloremque voluptatum non et, itaque ut maxime! At et magnam maiores aliquam reiciendis fugit ab explicabo totam! Modi odit est atque, maxime ullam sed dicta mollitia illum.
+            Corrupti quaerat perferendis tempora voluptate vel velit amet, excepturi tempore illo! Eius nihil nobis, architecto aliquam corporis adipisci accusantium, voluptatibus numquam similique tempore labore ullam? Repudiandae dolores tempore ullam ipsa.
+            Ipsa quae facilis quis deleniti fugit, vero modi quisquam veniam a saepe suscipit aliquam dolorem beatae enim laborum possimus odit earum commodi! Quae unde iste eos, facilis deleniti neque rerum.</p>          
+    </div>
+    <h1>TRANSFORM</h1>
+        <p class="rotate"> rotate</p>   <br> <br>
+        <p class="skew">skew</p>    <br> <br>
+        <p class="scale" style="margin: 50px;">scale</p>
+    <h1>TRANSITIONS</h1>
+            <div class="trans">
+            <div class="transitions"></div>
+        </div>
+        <br> <br> <br> <br> <br> <br>
+        <h1>Learnt About</h1>
+            <li>TRANSFORM</li>
+            <li>TRANSITIONS</li>
+            <li>COLUMN</li>
+            <li>DROPDOWN</li>
+</body>
+
+</html>
